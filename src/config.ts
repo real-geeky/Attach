@@ -25,9 +25,9 @@ export const colors = getRandomTheme();
 export const random_theme_button = true;
 
 export const base_profile = {
-    first_name: "John",
-    last_name: "Doe",
-    subtitle: "Aspiring Software Developer",
+    first_name: "Kevin",
+    last_name: "Cruz",
+    subtitle: "Cyber Security/ Pen Testing",
     bio: ["Miami, FL", "Florida International University"],
     name() {
         return this.first_name + " " + this.last_name;
@@ -36,11 +36,11 @@ export const base_profile = {
 
 export const extended_profile = {
     gender: "Male", // You can input any gender
-    username: "Cobra", // You can opt out my commenting either of these
+    username: "real-geeky", // You can opt out my commenting either of these
 } as ExtendedProfile;
 
 export const skillsList = [
-    "Time management",
+    /*"Time management",
     "Communication",
     "Adaptability",
     "Problem-solving",
@@ -63,7 +63,7 @@ export const skillsList = [
     "Self-management",
     "Optimism",
     "Calmness",
-    "Analysis",
+    "Analysis",*/
     "Self-motivation",
 ];
 
@@ -82,10 +82,10 @@ There are no required links, but each link must have:
 const projects_linksList = [
     {
         url: "https://google.com",
-        title: "Portfolio",
-        content: "By default, content is the url (view next to continue)",
+        title: "Dynamic E-Commerce Website",
+        content: "Files are currently not with me... They got corrupted when transferring them.",
     },
-    {
+    /*{
         url: "https://google.com",
         title: "Todo App",
         content: "but you can force content by specifying like this!",
@@ -93,66 +93,83 @@ const projects_linksList = [
     {
         url: "https://google.com",
         title: "And more!",
-    },
+    },*/
 ] as Link[];
 
 const experiences = [
     {
-        company: "Company X",
+        company: "TryHackMe",
         meta: [
-            "Software Engineer Intern",
-            "Jun 2022 - Aug 2022",
-            "Space, Space",
+            "Cyber Security Training",
+           // "Jun 2022 - Aug 2022",
+            //"Space, Space",
         ],
         desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
+            "Cyber security training within a virtual environment",
+            "Training on pen testing, cyber defense, and web fundamentals",
+            //"Became superman!",
         ],
     },
     {
-        company: "Company Y",
+        company: "PicoCTF",
         meta: [
-            "Software Engineer Intern",
+            "Cyber Security Training",
             "Jun 2021 - Aug 2021",
-            "Space, Space",
+            //"Space, Space",
         ],
         desc: [
-            "Did many things to improve the company",
-            "Hired a private inspector",
-            "Became superman!",
+            "Capture the flag virtual playground that refines hacking skills",
+            "Cryptography, Web exploitation, Forensics, Binary Exploitation, Reversing",
+            //"Became superman!",
+        ],
+    },
+    {
+        company: "Udemy",
+        meta: [
+            "Ethical Hacking Course",
+            "Jun 2021 - Aug 2021",
+           // "Space, Space",
+        ],
+        desc: [
+            "Network Fundamentals",
+            "Wireshark Analysis",
+            "SQL Injection",
+            "Metasploit",
+            "Man In The Middle attacks and protection",
+            "Wireless network attacks and protection",
+
         ],
     },
 ] as Experience[];
 
 const games_linksList = [
     {
-        url: "https://google.com",
-        title: "Game 1",
+        url: "https://github.com/real-geeky/Endless-Runner",
+        title: "Unity Endless Runner",
     },
-    {
-        url: "https://google.com",
-        title: "Game 2",
-        content: "But I have more!",
-    },
+    // {
+    //     url: "https://google.com",
+    //     title: "Game 2",
+    //     content: "But I have more!",
+    // },
 ] as Link[];
 
 const contactMe_linksList = [
     {
-        url: "https://www.linkedin.com/in/",
+        url: "https://www.linkedin.com/in/kevin-cruz-7b9b48248/",
         icon: "/icons/linkedin.svg",
         title: "LinkedIn",
     },
     {
-        url: "https://github.com/",
+        url: "https://github.com/real-geeky",
         icon: "/icons/github.svg",
         title: "GitHub",
     },
     {
-        url: "mailto: someone@gmail.com",
+        url: "mailto: kevcruz321@gmail.com",
         title: "Email",
         icon: "/icons/email.svg",
-        content: "someone@gmail.com",
+        content: "kevcruz321@gmail.com",
     },
 ] as Link[];
 
@@ -162,7 +179,7 @@ const contactMe_linksList = [
 export const sections = {
     // An example of a button. This button is a resume download
     Resume: {
-        url: "/Resume.docx",
+        url: "/Resume.pdf",
         download_name: `${base_profile.name()}_Resume.pdf`,
     },
     // An example of a list of projects, that is opened on load
